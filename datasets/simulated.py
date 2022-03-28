@@ -10,7 +10,7 @@ class Dataset(BaseDataset):
     # the cross product for each key in the dictionary.
     # cos + bruit ~ N(mu, sigma)
     parameters = {
-        'sigma': [0.1],
+        'sigma': np.linspace(0.1, 0.5, 5),
         'mu': [0],
         'T': [1000]}
 
